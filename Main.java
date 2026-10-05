@@ -19,6 +19,23 @@ public static int linear(int[] arr,int target){
     return -1;
 }
 	public static void main(String[] args){
+		/*using scanner*/
+		Scanner sc	=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++){
+			a[i]=sc.nextInt();
+		}
+		int target=sc.nextInt();
+		int result=linear(a,target);
+		if(result!=-1){
+		    System.out.println("Found at index: "+ result);
+		}
+		else{
+		    System.out.println("Not found");	
+		}
+		sc.close();
+		/*
 		int arr[]={9,8,7,10,5};
 		int target=7;
 		int result=linear(arr,target);
@@ -28,7 +45,7 @@ public static int linear(int[] arr,int target){
 		}
 		else{
 		    System.out.println("Not found");
-		}
+		}*/
 	
 	}
 }
